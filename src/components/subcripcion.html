@@ -18,62 +18,81 @@
     <header>
 
     </header>
-    <nav class="relative flex w-full flex-nowrap items-center justify-between bg-zinc-50 py-2 text-neutral-500 shadow-dark-mild hover:text-black focus:text-black dark:bg-black lg:flex-wrap lg:justify-start lg:py-5"
-        data-twe-navbar-ref>
-        <div class="flex w-full flex-wrap items-center justify-between px-5">
-            <div class="ms-2">
-
-                <a class="text-2xl font-bold text-black dark:text-white" href="https://cristhian-18.github.io/P1H1-Practica-de-html/index.html">GeForce NOW</a>
+    <nav class="bg-black">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-0">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button id="mobile-menu-button" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
             </div>
-            <!-- Hamburger button for mobile view -->
-            <button
-                class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-                type="button" data-twe-collapse-init data-twe-target="#navbarSupportedContent2"
-                aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- Hamburger icon -->
-                <span class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </span>
-            </button>
-
-            <!-- Collapsible navbar container -->
-            <div class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
-                id="navbarSupportedContent2" data-twe-collapse-item>
-                <!-- Left links -->
-                <ul class="list-style-none me-auto flex flex-col ps-0 lg:mt-1 lg:flex-row" data-twe-navbar-nav-ref>
-                    <!-- Home link -->
-                    <li class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-2" data-twe-nav-item-ref>
-                        <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                            href="https://cristhian-18.github.io/P1H1-Practica-de-html/index.html" data-twe-nav-link-ref>Home</a>
-                    </li>
-                    <li class="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-0" data-twe-nav-item-ref>
-                        <a class="text-black dark:text-green-600 lg:px-2" aria-current="page" href="https://cristhian-18.github.io/P1H1-Practica-de-html/src/components/subcripcion.html"
-                            data-twe-nav-link-ref>Suscripción </a>
-                    </li>
-
-                    <!-- Pricing link -->
-                    <li class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0" data-twe-nav-item-ref>
-                        <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                            href="https://cristhian-18.github.io/P1H1-Practica-de-html/src/components/juegos.html" data-twe-nav-link-ref>Juegos</a>
-                    </li>
-                    <li class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0" data-twe-nav-item-ref>
-                        <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                            href="https://cristhian-18.github.io/P1H1-Practica-de-html/src/components/descarga.html" data-twe-nav-link-ref>Descargar</a>
-                    </li>
-                    <!-- Pricing link -->
-                    <li class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0" data-twe-nav-item-ref>
-                        <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                            href="https://cristhian-18.github.io/P1H1-Practica-de-html/src/components/help.html" data-twe-nav-link-ref>Como Jugar</a>
-                    </li>
-
-                </ul>
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex-shrink-0 items-center">
+                <a class="text-2xl font-bold text-black dark:text-white" 
+                href="https://cristhian-18.github.io/P1H1-Practica-de-html/index.html">GeForce NOW</a>
+              </div>
+              <div class="hidden sm:ml-6 sm:flex sm:items-center sm:space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->                 
+                  <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                  href="https://cristhian-18.github.io/P1H1-Practica-de-html/index.html" data-twe-nav-link-ref>Home</a>
+                  <a class="text-black dark:text-green-600 lg:px-2" aria-current="page" 
+                  href="https://cristhian-18.github.io/P1H1-Practica-de-html/src/components/subcripcion.html"
+                  data-twe-nav-link-ref>Suscripción</a>
+                  <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                  href="https://cristhian-18.github.io/P1H1-Practica-de-html/src/components/juegos.html" data-twe-nav-link-ref>Juegos</a>
+                  <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                  href="https://cristhian-18.github.io/P1H1-Practica-de-html/src/components/descarga.html" data-twe-nav-link-ref>Descargar</a>
+                            <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                  href="https://cristhian-18.github.io/P1H1-Practica-de-html/src/components/help.html" data-twe-nav-link-ref>Como Jugar</a>
+              </div>
             </div>
+          </div>
         </div>
-    </nav>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="https://cristhian-18.github.io/P1H1-Practica-de-html/index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Home</a>
+            <a  href="https://cristhian-18.github.io/P1H1-Practica-de-html/src/components/subcripcion.html" class="text-black dark:text-green-600 block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Suscripción</a>
+            <a href="https://cristhian-18.github.io/P1H1-Practica-de-html/src/components/juegos.html"  class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Juegos</a>
+            <a  href="https://cristhian-18.github.io/P1H1-Practica-de-html/src/components/descarga.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Descargar</a>
+            <a href="https://cristhian-18.github.io/P1H1-Practica-de-html/src/components/help.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Como Jugar</a>
+            
+          </div>
+        </div>
+      </nav>
+      
+      <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+      
+        mobileMenuButton.addEventListener('click', () => {
+          const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
+          mobileMenuButton.setAttribute('aria-expanded', !expanded);
+          mobileMenu.hidden = !mobileMenu.hidden;
+        });
+      </script>
+      
+    
 
     <main>
 
